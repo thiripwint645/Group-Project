@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mystery Travel Agency</title>
+    <!--meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travel Agency Website" />
+    <meta name="author" content="Thiri Pwint & Grace Kham" />
+    <meta
+      name="keywords"
+      content="travel, blog, travel agency, myanmar, myanmar country"
+    />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="itinerary.css" />
+
+    <!---fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/503de85b9f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Lato:wght@900&display&family=Montserrat&family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        <a href="index.html"
+          ><i class="fas fa-plane-departure fa-fw"></i> Mystery Travel Agency</a
+        >
+      </div>
+      <ul class="links">
+        <li>
+          <a class="active" href="index.html"
+            ><i class="fas fa-home fa-fw"></i>Home</a
+          >
+        </li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="itinerary.html">Itinerary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li>
+          <a href="review.html"><i class="fas fa-star fa-fw"></i>Review</a>
+        </li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <!-- section area -->
+    <div class="homePage">
+      <section class="sec1">
+        <div class="title">
+          <h1>
+            <span class="itinerary_heading">Make Itinerary</span>
+          </h1>
+        </div>
+      </section>  
+      <!-- text container -->
+        <div class="text_container">
+          <!-- itinerary heading -->
+          <div class="text">
+            <h1 class="itinerary_second_heading">
+              Make Your Own Itinerary
+            </h1>
+          </div>
+          <!-- itinerary_para -->
+          <div class="para">
+            Welcome to <span class="color">Myanmar</span>, formerly known as
+            Burma! Arrive at
+            <span class="color">Yangon International Airport</span> with a warm
+            greeting by a tour representative, who will you transfer you to the
+            hotel. Settle in and relax, and enjoy the rest of the afternoon
+            before a packed two weeks ahead. downtown, the Chinatown area, the
+            Indian quarter, Sule Pagoda and City Hall. Drive around the
+            Kandawgyi Park, Chauk Htat Gyi Pagoda and enjoy the sunset at
+            Shwedagon Pagoda.
+          </div>
+          <!-- itinerary_form_input -->
+          <div class="itinerary_form_input_container">
+            <div class="form_middle">
+              <form action="itinerary.html" method="POST">
+                <label for="tour">
+                  Select Your Tour or Your Destination(required)</label>
+                <select name="tour" id="tour">
+                  <option value="-- Select Tour --">-- Select Tour --</option>
+                  <option value="Yangon-Bagan-Inle lake">
+                    Yangon-Bagan-Inle lake
+                  </option>
+                  <option value="Putao Trekking- Adventure">
+                    Putao Trekking- Adventure
+                  </option>
+                  <option value="Yangon-Mandalay-Bagan-Inle">
+                    Yangon-Mandalay-Bagan-Inle
+                  </option>
+                  <option value="Yangon-Mrauk U-Sittwe">
+                    Yangon-Mrauk U-Sittwe
+                  </option>
+                  <option value="Yangon-Mandalay-Kyaing Tong">
+                    Yangon-Mandalay-Kyaing Tong
+                  </option>
+                  <option value="Yangon-Sandway-Ngapali Beach">
+                    Yangon-Sandway-Ngapali Beach
+                  </option>
+                  <option value="Yangon-Kyaikhtiyo-Bago-Mawlamyine">
+                    Yangon-Kyaikhtiyo-Bago-Mawlamyine
+                  </option>
+                  <option value=""></option>
+                  <option value="-- Select Destination --">
+                    -- Select Destination --
+                  </option>
+                  <option value="Extra Day in Yangon">
+                    Extra Day in Yangon
+                  </option>
+                  <option value="Bagan(Main Destination)">
+                    Bagan(Main Destination)
+                  </option>
+                  <option value="Mandalay(Main Destination)">
+                    Mandalay(Main Destination)
+                  </option>
+                  <option value="Inle Lake(Main Destination)">
+                    Inle Lake(Main Destination)
+                  </option>
+                  <option value="Bago(Yangon Extension)">
+                    Bago(Yangon Extension)
+                  </option>
+                  <option value="ThanLyin(Yangon Extension)">
+                    ThanLyin(Yangon Extension)
+                  </option>
+                  <option value="Golden Rock(Yangon Extension)">
+                    Golden Rock(Yangon Extension)
+                  </option>
+                  <option value="Ngapali(Beach Extension)">
+                    Ngapali(Beach Extension)
+                  </option>
+                  <option value="Ngwe Saung(Beach Extension)">
+                    Ngwe Saung(Beach Extension)
+                  </option>
+                  <option value="Chaung Tha(Beach Extension)">
+                    Chaung Tha(Beach Extension)
+                  </option>
+                  <option value="Sittwe">Sittwe</option>
+                  <option value="Putao">Putao</option>
+                  <option value="Twante">Twante</option>
+                  <option value="Mount Popa">Mount Popa</option>
+                  <option value="Salay">Salay</option>
+                  <option value="Sagaing">Sagaing</option>
+                  <option value="Amarapur">Amarapur</option>
+                  <option value="Innwa">Innwa</option>
+                  <option value="Min Gun">Min Gun</option>
+                  <option value="Monywa">Monywa</option>
+                  <option value="Pin Oo Lwin">Pin Oo Lwin</option>
+                  <option value="Ka Law">Ka Law</option>
+                  <option value="Pindaya">Pindaya</option>
+                  <option value="Taunggyi">Taunggyi</option>
+                  <option value="Kekku">Kekku</option>
+                  <option value="Nay Pyi Taw">Nay Pyi Taw</option>
+                  <option value="Taungoo">Taungoo</option>
+                  <option value="Pyay">Pyay</option>
+                  <option value="Malamyine">Malamyine</option>
+                  <option value="Kyaing Tone">Kyaing Tone</option>
+                  <option value="Lashio">Lashio</option>
+                  <option value="Chin Hill">Chin Hill</option>
+                  <option value="Myitkyina">Myitkyina</option>
+                  <option value="Bhamo">Bhamo</option>
+                  <option value="Pathein">Pathein</option>
+                  <option value="NEED ADVICE">NEED ADVICE</option>
+                </select>
+                <br/>
+                <label for="transportation"
+                  >Choose Your Transportation(required)</label>
+                <select name="transportation" id="transportation">
+                  <option value="-- Choose Your Transportation --">
+                    -- Choose Your Transportation --
+                  </option>
+                  <option value="Car">Car</option>
+                  <option value="Express Car">Express Car</option>
+                  <option value="Train">Train</option>
+                  <option value="Cruise">Cruise</option>
+                  <option value="Flight">Flight</option>
+                </select>
+                <br/>
+                <label for="rating">Choose Hotel Rating(required)</label>
+                <select name="rating" id="rating">
+                  <option value="-- Choose Hotel Rating --">
+                    -- Choose Hotel Rating --
+                  </option>
+                  <option value="3 Star Rating">3 Star Rating</option>
+                  <option value="4 Star Rating">4 Star Rating</option>
+                  <option value="5 Star Rating">5 Star Rating</option>
+                </select>
+                <br />
+                <label for="date"
+                  >Select Estimate Arrival Date (required)
+                  </label>
+                <input type="date" id="date" value size="80" />
+                <br />
+                <label for="name">Your name (required)</label>
+                <input type="text" id="name" value size="80" required />
+                <br />
+                <label for="email">Your Email (required)</label>
+                <input type="email" id="email" value size="80" required />
+                <br />
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" value size="80" />
+                <br />
+                <label for="message">Your Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="6"
+                ></textarea>
+                <button class="sub_btn1" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+          <!-- itinerary banner -->
+          <div class="heading">
+            <h1>Welcome to My Agency</h1>
+          </div>
+          <div class="star">
+            <i class="fas fa-star"></i>&nbsp; <i class="far fa-star"></i>&nbsp;
+            <i class="fas fa-star"></i>&nbsp; <i class="far fa-star"></i>&nbsp;
+            <i class="fas fa-star"></i>&nbsp; <i class="far fa-star"></i>&nbsp;
+            <i class="fas fa-star"></i>&nbsp; <i class="far fa-star"></i>&nbsp;
+            <i class="fas fa-star"></i>&nbsp; <i class="far fa-star"></i>&nbsp;
+          </div>
+          <div class="banner_container">
+            <!-- first row banner -->
+            <div class="box">
+              <img src="img/baganfirst.jpg" alt="" class="img" />
+              <div class="content">
+                <h3 class="title">Bagan</h3>
+                <span class="subtitle">Explore the Nature</span>
+              </div>
+              <ul class="icon">
+                <li>
+                  <a href="index.html"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="packages.html"><i class="fa fa-link"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+              <img src="img/pagoda.jpg" alt="" class="img" />
+              <div class="content">
+                <h3 class="title">Shweseegone Pagoda</h3>
+                <span class="subtitle">Explore the Nature</span>
+              </div>
+              <ul class="icon">
+                <li>
+                  <a href="index.html"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="packages.html"><i class="fa fa-link"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+              <img src="img/inlaynight.jpg" alt="" class="img" />
+              <div class="content">
+                <h3 class="title">Inlay Lake</h3>
+                <span class="subtitle">Explore the Nature</span>
+              </div>
+              <ul class="icon">
+                <li>
+                  <a href="index.html"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="packages.html"><i class="fa fa-link"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+     <!-- second row banner -->
+          <div class="banner_container">
+            <div class="box">
+              <img src="img/naungcho.jpg" alt="" class="img" />
+              <div class="content">
+                <h3 class="title">Naung Cho</h3>
+                <span class="subtitle">Explore the Nature</span>
+              </div>
+              <ul class="icon">
+                <li>
+                  <a href="index.html"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="packages.html"><i class="fa fa-link"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+              <img src="img/taunggyi.jpg" alt="" class="img" />
+              <div class="content">
+                <h3 class="title">Taunggyi</h3>
+                <span class="subtitle">Explore the Nature</span>
+              </div>
+              <ul class="icon">
+                <li>
+                  <a href="index.html"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="packages.html"><i class="fa fa-link"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+              <img src="img/kalaw.jpg" alt="" class="img" />
+              <div class="content">
+                <h3 class="title">Kalaw</h3>
+                <span class="subtitle">Explore the Nature</span>
+              </div>
+              <ul class="icon">
+                <li>
+                  <a href="index.html"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="packages.html"><i class="fa fa-link"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>    
+    <!-- float section -->
+    <div class="float_banner">
+      <h1 class="font">Itinerary-for ticket info please call (908) 703-3316</h1>
+      <div class="banner_container1">
+        <div class="photo1">
+          <p class="right_para"><img class="ticket" src="img/banner_images.jpg" alt="Banner Image"></div>
+        <div class="banner_text1">
+          <p>
+            <i class="fas fa-check-square"></i>&nbsp;Itinerary Receipt. . . <br/>
+            <i class="fas fa-check-square"></i>&nbsp;Online Check in<br/>
+            <i class="fas fa-check-square"></i>&nbsp;Ready for flight<br/>
+            <i class="fas fa-check-square"></i>&nbsp;Destination at Yangon International Airport Terminal 2<br/>
+            <i class="fas fa-check-square"></i>&nbsp;Thank you my dear clients for trusting
+          <br/><br/>
+           #Mystery Travel and Tours<br/> 
+          </p>
+        </div>
+      </div>
+
+      <div class="travelaccessories">
+        <h1 class="accessories_title">Esssentials to select travel accessories:</h1>
+        <span class="sub_head">Choose your accessories smartly to prevent exhaustion in your trip!!</span>
+        <div class="travelaccessories_container">
+          <div class="lefttravel">
+            <p>
+              
+              <ul class="sub_square">
+                <li>
+                  Purpose of the trip<br/>
+                  Are you going to a business meeting? Or just a relax? Shopping is a must? Prioritise your needs.
+                </li>
+                <li>
+                  Understand your itinerary 
+                  What do you need on your trip? When do you need that? Do you need to carry it with you all the time?
+                </li>
+                <li>
+                  Handling capability
+                  Can you carry it? will it be too heavy to carry on your way?
+                </li>
+                <li>
+                  Organise belongings<br/>
+                  Are you easy to find out the stuff when you need it? Where do you put the frequency use items?
+                </li>
+                <li>
+                  Protection<br/>
+                Is it easy to damage? How can you protect it? 
+                </li>
+              </ul>
+            </p>
+          </div>
+          <div class="righttravel">
+            <p>
+              <video class="video" width="450" height="400" controls>
+                <source src="img/itinerary_vdo.mp4" type="video/mp4">
+              </video>
+            </p> 
+          </div>
+        </div>
+      </div>
+
+</div>
+  <!-- Footer Section -->
+    <!-- Footer -->
+    <div class="footer_container">
+      <div class="newsletter_container">
+        <div class="newsletter_header"><h3>Subscribe to newsletter</h3></div>
+        <div class="newsletter">
+          <form action="itinerary.html" method="POST">
+            <p>
+              <input
+                class="inputfooter"
+                type="name"
+                id="name"
+                placeholder="Enter your name"/>
+            </p>
+            <p>
+              <input
+                class="inputfooter"
+                type="email"
+                id="email"
+                placeholder="Enter your email"/>
+            </p>
+            <button class="subscribe_btn">
+              <i class="far fa-envelope fa-fw"></i> Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="pay_container">
+        <div class="pay_header"><h3>We accept</h3></div>
+        <div class="pay">
+          <span class="visa"><i class="fab fa-cc-visa"></i></span>
+          <span class="master"><i class="fab fa-cc-mastercard"></i></span>
+          <span class="jcb"><i class="fab fa-cc-jcb"></i></span>
+        </div>
+        <div class="connect_container">
+          <div class="connect_header"><h3>Connect with us</h3></div>
+          <div class="connect">
+            <a
+              class="fb"
+              href="https://www.facebook.com/"
+              title="Facebook"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              class="twitter"
+              href="https://www.twitter.com/"
+              title="Twitter"
+              target="_blank"
+              ><i class="fab fa-twitter"></i></a>
+            <a
+              class="instagram"
+              href="https://www.instagram.com/"
+              title="Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i></a>
+            <a
+              class="vb"
+              href="https://www.viber.com/"
+              title="Viber"
+              target="_blank"
+              ><i class="fab fa-viber"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact_container">
+        <div class="contact_header"><h3>Contact</h3></div>
+        <div class="contact_box">
+          <p>
+            <span class="ico"><i class="fas fa-map-marked-alt fa-fw"></i></span>
+            No.1, Bahan Township, 11201, Yangon, Myanmar
+          </p>
+          <p>
+            <span class="ico"><i class="fas fa-phone-alt fa-fw"></i></span>
+            <a class="etel" href="tel:+95912345678">+95912345678</a>
+          </p>
+          <p>
+            <span class="ico"><i class="far fa-envelope fa-fw"></i></span>
+            <a class="etel" href="mailto:info@mysterytravelagency.com.mm">info@mysterytravelagency.com.mm</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <small
+        >&copy; 2021 <a href="index.html">Mystery Travel Agency</a>. All rights
+        reserved
+      </small>
+    </div>
+  </body>
+</html>

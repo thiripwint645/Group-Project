@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mystery Travel Agency</title>
+    <!--meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travel Agency Website" />
+    <meta name="author" content="Pyae Phyo Thaw" />
+    <meta
+      name="keywords"
+      content="travel, blog, travel agency, myanmar, myanmar country"
+    />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!---fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/503de85b9f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Lato:wght@900&display&family=Montserrat&family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Go to up button -->
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    <!-- Navigation Menu -->
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        <a href="index.html"
+          ><i class="fas fa-plane-departure fa-fw"></i> Mystery Travel Agency</a
+        >
+      </div>
+      <ul class="links">
+        <li>
+          <a class="active" href="index.html"
+            ><i class="fas fa-home fa-fw"></i>Home</a
+          >
+        </li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="itinerary.html">Itinerary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li>
+          <a href="review.html"><i class="fas fa-star fa-fw"></i>Review</a>
+        </li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+
+    <!-- banner section -->
+    <div class="homePage">
+      <div class="banner">
+        <!-- Banner heading -->
+        <h2 class="banner_heading">
+          Travel Myanmar without limits <i class="fas fa-heart fa-fw"></i>
+        </h2>
+        <br />
+        <!-- Banner paragraph, slogan -->
+        <p class="banner_para">
+          Travel Golden Land Myanmar with Mystery Travel Agency
+        </p>
+        <!-- Buttons container -->
+        <div class="btnbanner_container">
+        <a href="itinerary.html" title="Explore More"
+          ><button class="btn explore">Explore More</button></a
+        >
+        <a href="packages.html" title="Packages"
+          ><button class="btn pkg">Packages</button></a
+        >
+        </div> 
+      </div>
+    </div>
+    <!-- About Slot -->
+    <div class="about_container">
+      <div class="about">
+        <h1>Welcome to Mystery Travel Agency</h1>
+        <br />
+        <p class="about_p">
+          <strong>Mingalarbar!</strong> Welcome to Myanmar: the land of
+          hospitable locals. You will find that Burmese locals are extremely
+          friendly and will more than likely be willing to help inyour times
+          ofneed! So, take advantage of the sociable nature of the locals and
+          get to know what Myanmar is like through the eyes of its people. There
+          are many
+          <a href="info.html" title="Beautiful places in Myanmar"
+            ><strong> places to visit in Myanmar</strong></a
+          >, where you will find the best attractions for your holiday.
+        </p>
+        <div class="about_btn_container">
+          <div class="profile">
+            <a href="about.html"><button class="about_btn" title="Our Profile">Our Profile</button></a>
+          </div>
+          <div class="itinerary">
+            <a href="itinerary.html"><button class="about_btn" title="Itinerary">Itinerary</button></a>
+          </div>
+          <div class="package_slot">
+            <a href="packages.html"><button class="about_btn" title="Packages">Packages</button></a>
+          </div>
+          <div class="review_slot">
+            <a href="review.html"><button class="about_btn" title="Review">Review</button></a>
+          </div>
+          <div class="blog">
+            <a href="blog.html"><button class="about_btn" title="Blog">Blog</button></a>
+          </div>
+          <div class="info">
+            <a href="info.html"><button class="about_btn" title="Info">Info</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Travel destination -->
+
+    <div class="tour_container">
+      <div class="tour_body">
+        <form action="index.html" method="POST" id="form1">
+          <div class="tour_heading">
+            <h2><i class="fas fa-suitcase fa-fw"></i>Find Your Perfect Trip</h2>
+          </div>
+          <!-- Tour parts divided -->
+          <div class="tour_parts">
+            <!-- Tour categories part -->
+            <div class="tour_part1">
+              <div class="label_part1">
+                <label for="tourcategories">Categories</label>
+              </div>
+              <div class="part1">
+                <select id="tourcategories" class="tour_cat" value="tourcategories">
+                <option value="select">---Select---</option>
+                <option value="latest">Latest Myanmar Tours</option>
+                <option value="culture">Culture & Heritage Tours</option>
+                <option value="pilgrimage">Pilgrimage Tours</option>
+                <option value="adventure">Adventure & Tours</option>
+                <option value="day">Day Tours</option>
+                <option value="luxury">Luxury Tours</option>
+              </select>
+              </div>
+            </div>
+            <!-- Destination part -->
+            <div class="tour_part2">
+              <div class="label_part2">
+                <label for="destination">Destination</label>
+              </div>
+              <div class="part2">
+                <select id="destination" class="dest" value="destination">
+                  <option value="select">---Select---</option>
+                  <option value="Yangon">Yangon</option>
+                  <option value="Mandalay">Mandalay</option>
+                  <option value="Nay Pyi Taw">Nay Pyi Taw</option>
+                  <option value="Bagan">Bagan</option>
+                  <option value="Inle">Inle Lake</option>
+                  <option value="Kyaikhtiyo">Kyaikhtiyo</option>
+                  <option value="Pyin Oo Lwin">Pyin Oo Lwin</option>
+                  <option value="Loikaw">Loikaw</option>
+                  <option value="Myeik">Myeik</option>
+                  <option value="Putao">Putao</option>
+                </select>
+              </div>
+            </div>
+            <!-- Date part -->
+            <div class="tour_part3">
+              <div class="label_part3">
+                <label for="date">Date</label>
+              </div>
+              <div class="part3"><input type="date" id="date" required/></div>
+            </div>
+          </div>
+        </form>
+        <!-- Buttons part -->
+        <div class="tour_button">
+          <button type="submit" form="form1" value="submit" class="button_search">
+            <i class="fas fa-search fa-fw"></i> Search
+          </button>
+          <a href="itinerary.html"><button class="button_customize">
+            <i class="far fa-edit fa-fw"></i> Customize Tour
+          </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Special Tour Section -->
+    <div class="specialtours">
+      <h1>Special Tours</h1>
+      <p class="tourstext">Check out the latest offers for Myanmar Trips</p>
+      <div class="specialtours_container">
+        <!-- Tour Card 1 -->
+        <div class="tours card">
+        <a class="tour_link" href="packages.html" target="_blank" title="Bagan: Full Day Temple Tour">
+          <div class="tour_text_container">
+            <img src="img/body1.webp" alt="Bagan" />
+          </div>
+          <div class="tour_textset">
+
+            <h3>Bagan: Full Day Temple Tour</h3>
+            <p>
+              <span class="text_tour">From</span>
+              <br />
+              <span class="linethrough">$50</span>
+              <span class="currentprice">$37</span>
+            </p>
+          </div>
+          </a>
+        </div>
+        <!-- Tour Card 2 -->
+        <div class="tours card">
+          <a class="tour_link" href="packages.html" target="_blank" title="Ngapali: Silver Beach Tour">
+          <div class="tour_text_container">
+            <img src="img/ngapali.webp" alt="Ngapali" />
+          </div>
+          <div class="tour_textset">
+            <h3>Ngapali: Silver Beach Tour</h3>
+            <p>
+              <span class="text_tour">From</span>
+              <br />
+              <span class="linethrough">$260</span>
+              <span class="currentprice">$220</span>
+            </p>
+          </div>
+          </a>
+        </div>
+        <!-- Tour Card 3 -->
+        <div class="tours card">
+          <a class="tour_link" href="packages.html" target="_blank" title="Inle: 5-Day Lake Tour">
+          <div class="tour_text_container">
+            <img src="img/p1.jpg" alt="Inle" />
+          </div>
+          <div class="tour_textset">
+            <h3>Inle: 5-Day Lake Tour</h3>
+            <p>
+              <span class="text_tour">From</span>
+              <br />
+              <span class="linethrough">$200</span>
+              <span class="currentprice">$160</span>
+            </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="moretours_container">
+        <a href="packages.html"><button class="morebutton" title="Explore More Tours">
+          <i class="fas fa-arrow-alt-circle-right" style="font-size: 18px"></i>
+          <b>Explore more tours</b>
+        </button>
+        </a>
+      </div>
+    </div>
+    <!-- Review section -->
+    <div class="review_container">
+      <h1>Review</h1>
+      <p class="review_p">What our clients say about us?</p>
+      <div class="review_body">
+        <!-- First Review -->
+        <div class="speechbubble">
+          <div class="bubble">
+            <p>
+              <b>Rating:</b>
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i
+              ></span>
+              <br />
+              <span
+                >This was a great deal for a fabulous hotel in an excellent
+                location. Your company was helpful and easy to deal with, and we
+                would certainly be interested in booking similar deals through
+                you again. They managed our complicated tour great.</span
+              >
+            </p>
+            <span class="triangle"></span>
+          </div>
+          <div class="review_photo">
+            <img src="img/photo.jpg" alt="" />
+            <div class="review_author">
+              <p><b>Luke Clarke</b> <br />
+                December 2019</p>
+            </div>
+            </div>
+          </div>
+        <!-- Second review -->
+        <div class="speechbubble">
+          <div class="bubble">
+            <p>
+              <b>Rating:</b>
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i
+              ></span>
+              <br />
+              <span
+                >
+                Dear Honey, I wanted to thank you very much for planning the trip to Mandalay and Inle lake. It was amazing and exceeded my expectations. It was a wonderful experience for all of us and the support, insight and guidance. 
+                </span
+              >
+            </p>
+            <span class="triangle"></span>
+          </div>
+          <div class="review_photo">
+            <img src="img/photo3.jpg" alt="" />
+            <div class="review_author">
+              <p><b>Rebecca Molloy</b> <br />
+                January 2020</p>
+            </div>
+            </div>
+          </div>
+        <!-- Third review -->
+        <div class="speechbubble">
+          <div class="bubble">
+            <p>
+              <b>Rating:</b>
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i
+              ></span>
+              <br />
+              <span
+                >We could not fault the service. Everything was organised as per the holiday package (flights, transfers and accomodation) and was great. I was nervous about using an online agency but it all went very smoothly.</span
+              >
+            </p>
+            <span class="triangle"></span>
+          </div>
+          <div class="review_photo">
+            <img src="img/photo2.jpg" alt="" />
+            <div class="review_author">
+              <p><b>Peter Haywood</b> <br />
+                May 2020</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="moretours_container">
+          <a href="review.html"><button class="morebutton" title="View all comments">
+            <i class="fas fa-comments" style="font-size: 20px;"></i>
+            <b>View all comments</b>
+          </button></a>
+        </div>
+      </div>
+    </div>
+    <!-- Blog section -->
+    <div class="blog1">
+      <div class="blog_title">
+        <h1>Travel Blog</h1>
+      </div>
+      <div class="blog_title_para">
+        <p>News, reviews and things to do…</p>
+      </div>
+      <div class="blogtext_container">
+        <!-- Blog card 1 -->
+        <div class="blog_card">
+          <a href="blog.html">
+          <div class="img_wrap">
+            <img class="img_img" src="img/mandalay_policy.jpg" />
+            <div class="img_description_layer">
+              <p class="img_description">
+                +
+              </p>
+            </div>
+          </div>
+        </a>
+          <div class="blogheader"><h2><a href="blog.html">Tour Mandalay’s Sustainable Policy</a>
+          </h2></div>
+          <div class="date_blog">
+            <p class="date_para"><small><span class="icon_color"><i class="far fa-calendar-alt fa-fw"></i></span> 19 Nov 2021</small>
+              <span class="float"><small><span class="icon_color"><i class="fas fa-user fa-fw"></i></span> <b>Author:</b> admin</small></span></p>
+          </div>
+          <div class="blog_para">
+            <p>A community-based guide from Kayah State Introduction Locally owned, locally based and focusing solely on Myanmar, we care deeply for our country [...]</p> </div>
+          <div class="blog_readmore">
+            <a href="blog.html"><button class="about_btn">Read More</button></a>
+          </div>
+        </div>
+        <!-- Blog card 2 -->
+        <div class="blog_card">
+          <a href="blog.html">
+          <div class="img_wrap">
+            <img class="img_img" src="img/kayah.jpg" />
+            <div class="img_description_layer">
+              <p class="img_description">
+                +
+              </p>
+            </div>
+          </div>
+          </a>
+          <div class="blogheader"><h2><a href="blog.html">Festival of 68th Anniversary Kayah State Day!</a>
+          </h2></div>
+          <div class="date_blog">
+            <p class="date_para"><small><span class="icon_color"><i class="far fa-calendar-alt fa-fw"></i></span> 19 Jan 2021</small>
+              <span class="float"><small><span class="icon_color"><i class="fas fa-user fa-fw"></i></span> <b>Author:</b> admin</small></span></p>
+          </div>
+          <div class="blog_para">
+            <p>The festival marking the 68th anniversary Kayah State Day to be held from 10th January to 19th January in 2020 for 10 days at the  [...] </p></div>
+          <a href="blog.html">
+          <div class="blog_readmore">
+            <button class="about_btn">Read More</button>
+          </div>
+          </a>
+        </div>
+        <!-- Blog card 3 -->
+        <div class="blog_card">
+          <a href="blog.html">
+          <div class="img_wrap">
+            <img class="img_img" src="img/inle.jpg" />
+            <div class="img_description_layer">
+              <p class="img_description">
+                +
+              </p>
+            </div>
+          </div>
+          </a>
+          <div class="blogheader"><h2><a href="blog.html">The Inle Sanctuary at Phayartaung
+          </a></h2></div>
+          <div class="date_blog">
+            <p class="date_para"><small><span class="icon_color"><i class="far fa-calendar-alt fa-fw"></i></span> 19 Jan 2020</small>
+              <span class="float"><small><span class="icon_color"><i class="fas fa-user fa-fw"></i></span> <b>Author:</b> admin</small></span></p>
+          </div>
+          <div class="blog_para">
+            <p>Looking to escape the crowds, reconnect with nature, experience something authentic and put your money in the right place? Look no further than [...] </p></div>
+          <div class="blog_readmore">
+            <a href="blog.html"><button class="about_btn">Read More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="moretours_container">
+        <a href="blog.html"><button class="morebutton" title="Load more posts">
+          <i class="fas fa-rss" style="font-size: 20px;"></i>
+          <b>Load more posts</b>
+        </button></a>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer_container">
+      <!-- Subscribe to newsletter -->
+      <div class="newsletter_container">
+        <div class="newsletter_header"><h3>Subscribe to newsletter</h3></div>
+        <div class="newsletter">
+          <form action="index.html" method="POST">
+            <p><input type="name" id="name" placeholder="Enter your name" required /></p>
+            <p>
+              <input type="email" id="email" placeholder="Enter your email" required />
+            </p>
+            <button><i class="far fa-envelope fa-fw"></i> Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <!-- We accept + Connect with us -->
+      <div class="pay_container">
+        <div class="pay_header"><h3>We accept</h3></div>
+        <div class="pay">
+          <span class="visa"><i class="fab fa-cc-visa"></i></span>
+          <span class="master"><i class="fab fa-cc-mastercard"></i></span>
+          <span class="jcb"><i class="fab fa-cc-jcb"></i></span>
+        </div>
+        <div class="connect_container">
+          <div class="connect_header"><h3>Connect with us</h3></div>
+          <div class="connect">
+            <a
+              class="fb"
+              href="https://www.facebook.com/"
+              title="Facebook"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="twitter"
+              href="https://www.twitter.com/"
+              title="Twitter"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="instagram"
+              href="https://www.instagram.com/"
+              title="Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="vb"
+              href="https://www.viber.com/"
+              title="Viber"
+              target="_blank"
+              ><i class="fab fa-viber"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact slot -->
+      <div class="contact_container">
+        <div class="contact_header"><h3>Contact</h3></div>
+        <div class="contact_box">
+          <p>
+            <span class="ico"><i class="fas fa-map-marked-alt fa-fw"></i></span>
+            No.1, Bahan Township, 11201, Yangon, Myanmar
+          </p>
+          <p>
+            <span class="ico"><i class="fas fa-phone-alt fa-fw"></i></span>
+            <a class="etel" href="tel:+95912345678">+95912345678</a>
+          </p>
+          <p>
+            <span class="ico"><i class="far fa-envelope fa-fw"></i></span>
+            <a class="etel" href="mailto:info@mysterytravelagency.com.mm"
+              >info@mysterytravelagency.com.mm</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright footer -->
+    <div class="copyright">
+      <small
+        >&copy; 2021 <a href="index.html">Mystery Travel Agency</a>. All rights
+        reserved</small
+      >
+    </div>
+  </body>
+</html>

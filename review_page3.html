@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Review Form - Mystery Travel Agency</title>
+    <!--meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travel Agency Website" />
+    <meta name="author" content="Ei Honey Kyaw" />
+    <meta
+      name="keywords"
+      content="travel, blog, travel agency, myanmar, myanmar country"
+    />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="review.css" />
+
+    <!---fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/503de85b9f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Merienda+One&family=Oleo+Script&family=Rancho&family=Sriracha&family=Yrsa:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Background Color removed by Code Leader  -->
+    <!-- <style>
+      body {
+        background-color: silver;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        <a href="index.html"
+          ><i class="fas fa-plane-departure fa-fw"></i> Mystery Travel Agency</a
+        >
+      </div>
+      <ul class="links">
+        <li>
+          <a class="active" href="index.html"
+            ><i class="fas fa-home fa-fw"></i>Home</a
+          >
+        </li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="itinerary.html">Itinerary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li>
+          <a href="review.html"><i class="fas fa-star fa-fw"></i>Review</a>
+        </li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+
+    <!-- HEADING TITLE ဒီထဲက h2 မှာ ခေါင်းစဉ်ပြောင်းပေးကြပါ-->
+    <div class="homePage">
+      <div class="title">
+        <h2>Write Your Reviews</h2>
+      </div>
+    </div>
+    <div class="write_container" align="center">
+      <form action="">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="name"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Email Address</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              place
+              holder="Enter Your Email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Places</label>
+          </div>
+          <div class="col-75">
+            <select>
+              <option>Yangon</option>
+              <option>Mandalay</option>
+              <option>Bago</option>
+              <option>Kachin</option>
+              <option>Taunggyi</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Month of Visit</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="visit" name="visit" place holder="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Caption For Review</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="review" name="review" place holder="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Your Review</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              type="text"
+              id="ureview"
+              name="ureview"
+              place
+              holder="Write Your Something.........."
+              rows="10%"
+              cols="30px"
+            ></textarea>
+          </div>
+        </div>
+        <!-- Changes input type="submit" into button type="submit (modifying code error) [Code Leader] -->
+        <button type="submit" class="sub">Submit</button>
+      </form>
+    </div>
+    <a href="review.html">
+      <button type="button" class="btnfive">Go To Review Page</button></a
+    >
+    <!-- Footer Section -->
+    <!-- Footer -->
+    <div class="footer_container">
+      <div class="newsletter_container">
+        <div class="newsletter_header"><h3>Subscribe to newsletter</h3></div>
+        <div class="newsletter">
+          <form action="review_page3.html" method="POST">
+            <p>
+              <input
+                type="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </p>
+            <button><i class="far fa-envelope fa-fw"></i> Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="pay_container">
+        <div class="pay_header"><h3>We accept</h3></div>
+        <div class="pay">
+          <span class="visa"><i class="fab fa-cc-visa"></i></span>
+          <span class="master"><i class="fab fa-cc-mastercard"></i></span>
+          <span class="jcb"><i class="fab fa-cc-jcb"></i></span>
+        </div>
+        <div class="connect_container">
+          <div class="connect_header"><h3>Connect with us</h3></div>
+          <div class="connect">
+            <a
+              class="fb"
+              href="https://www.facebook.com/"
+              title="Facebook"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="twitter"
+              href="https://www.twitter.com/"
+              title="Twitter"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="instagram"
+              href="https://www.instagram.com/"
+              title="Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="vb"
+              href="https://www.viber.com/"
+              title="Viber"
+              target="_blank"
+              ><i class="fab fa-viber"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact_container">
+        <div class="contact_header"><h3>Contact</h3></div>
+        <div class="contact_box">
+          <p>
+            <span class="ico"><i class="fas fa-map-marked-alt fa-fw"></i></span>
+            No.1, Bahan Township, 11201, Yangon, Myanmar
+          </p>
+          <p>
+            <span class="ico"><i class="fas fa-phone-alt fa-fw"></i></span>
+            <a class="etel" href="tel:+95912345678">+95912345678</a>
+          </p>
+          <p>
+            <span class="ico"><i class="far fa-envelope fa-fw"></i></span>
+            <a class="etel" href="mailto:info@mysterytravelagency.com.mm"
+              >info@mysterytravelagency.com.mm</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <small
+        >&copy; 2021 <a href="index.html">Mystery Travel Agency</a>. All rights
+        reserved</small
+      >
+    </div>
+  </body>
+</html>
